@@ -1,0 +1,25 @@
+
+.person {
+  color: green;
+  font-weight: 900;
+}
+
+.organization {
+  color: blueviolet;
+  font-weight: 900;
+}
+
+.date {
+  border-bottom: 1px solid blue;
+  font-weight: 900;
+}
+
+.quantity {
+  background: lightsalmon;
+  font-weight: 900;
+}
+
+.location {
+  color: orange;
+  font-weight: 900;
+}

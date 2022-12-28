@@ -1,0 +1,21 @@
+
+.homepage {
+  
+}
+
+.homepage .mice {
+  font-size: xxx-large;
+  color: green;
+}
+
+.homepage .mute {
+  font-size: xxx-large;
+  color: red;
+}
+
+.homepage .editable {
+  border: 1px solid rgba(34,36,38,.15);
+  width: 600px;
+  height: 250px;
+  overflow-y: scroll;
+}

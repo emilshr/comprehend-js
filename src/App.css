@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.topheading {
+  background-color: darkseagreen;
+  display: flex;
+  height: 50px;
+}
+
+.topheading .headingtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
+}

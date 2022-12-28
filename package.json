@@ -6,10 +6,18 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "aws-sdk": "^2.730.0",
+    "axios": "^0.19.2",
+    "microphone-stream": "^5.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "@aws-sdk/eventstream-marshaller": "0.1.0-preview.2",
+    "@aws-sdk/util-utf8-node": "0.1.0-preview.1",
+    "react-contenteditable": "^3.3.5",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
