@@ -43,6 +43,8 @@ function combineSegments(results) {
     if (matches.length) ret.push({ start, end, matches })
   }
 
+  console.log({ret})
+
   return ret;
 }
 
@@ -100,6 +102,8 @@ export function TranscriptLine({
   const sortedResults = useMemo(() => filteredResults.sort((a, b) => a.BeginOffset - b.BeginOffset), [filteredResults]);
   const splitSegments = useMemo(() => combineSegments(sortedResults), [sortedResults]);
   const ranges = useMemo(() => applySegmentsToWords(chunk, splitSegments), [chunk, splitSegments]);
+
+  console.log({ ranges })
 
   return (
     <p className={s.base}>
