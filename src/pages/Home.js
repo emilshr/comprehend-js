@@ -23,9 +23,16 @@ class HomeScreen extends Component {
   constructor(props){  
     super(props);  
     this.state = { listening: false, transcriptPiece: "", clientCredentials: {}, transcriptionHtml: ""};
+    this.editableref = React.createRef();
   }
 
   componentDidMount() {
+    console.log(this.editableref)
+  }
+
+  componentDidUpdate() {
+    console.log(this.editableref)
+    // this.editableref.current.scrollIntoView()
   }
 
   startRecording = () => {
@@ -68,15 +75,15 @@ class HomeScreen extends Component {
 
     return (
       <div>
-        <Container text style={{ marginTop: '2em' }}>
+        <>
           <Form>
             <div className='homepage'>
-              <ContentEditable ref={this.editableref} className="editable" html={transcriptionHtml+transcriptPiece} name='transcription'/>
+              <ContentEditable ref={this.editableref} className="editable" html={transcriptionHtml+transcriptPiece} name='transcription'  />
               {listening ? '' : <Icon name="microphone" className="mice" link onClick={this.startRecording}/> }
               {listening ? <Icon name="mute" className="mute" link onClick={this.endRecording}/> :''}
             </div>
             </Form>
-        </Container>
+        </>
       </div>
     );
   }

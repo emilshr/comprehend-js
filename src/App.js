@@ -8,7 +8,7 @@ function App() {
     <div>
     <div className="topheading">
       <div className="headingtext">
-        Real-time speech analysis
+        App
       </div>
     </div>
     <Home />
